@@ -1,6 +1,7 @@
 function GetSurfaceType(vehicle)
     local coords = GetEntityCoords(vehicle)
-    local groundMaterial = GetGroundMaterialType(coords.x, coords.y, coords.z)
+    --local groundMaterial = GetGroundMaterialType(coords.x, coords.y, coords.z)
+    local retval --[[ integer ]] =	GetVehicleWheelType(vehicle --[[ Vehicle ]]	)
 
     if groundMaterial == "SAND" or groundMaterial == "DIRT" or groundMaterial == "GRASS" then
         return "offroad"
